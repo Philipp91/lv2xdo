@@ -13,7 +13,7 @@
 		foaf:name "Philipp Keck";
 		foaf:homepage <https://philippkeck.de>
 	] ;
-	doap:license <http://opensource.org/licenses/isc> ;
+	doap:license <http://opensource.org/licenses/mit> ;
 	lv2:binary <liblv2xdo.so> ;
 
 	lv2:requiredFeature lv2:inPlaceBroken ;
