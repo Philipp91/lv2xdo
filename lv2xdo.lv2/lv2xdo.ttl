@@ -1,0 +1,37 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix midi: <http://lv2plug.in/ns/ext/midi#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://philippkeck.de/lv2/lv2xdo>
+	a lv2:Plugin ;
+	doap:name "LV2 XDO" ;
+	doap:maintainer [
+		a foaf:Person;
+		foaf:name "Philipp Keck";
+		foaf:homepage <https://philippkeck.de>
+	] ;
+	doap:license <http://opensource.org/licenses/isc> ;
+	lv2:binary <liblv2xdo.so> ;
+
+	lv2:requiredFeature lv2:inPlaceBroken ;
+	lv2:port [
+			a lv2:InputPort, lv2:ControlPort ;
+			lv2:index 1 ;
+			lv2:symbol "control_play" ;
+			lv2:name "Play key" ;
+			lv2:default 0.000000 ;
+			lv2:minimum 0.000000 ;
+			lv2:maximum 1.000000 ;
+			lv2:portProperty lv2:toggled ;
+	] , [
+		a lv2:InputPort , atom:AtomPort ;
+		atom:bufferType atom:Sequence ;
+		atom:supports midi:MidiEvent ;
+		lv2:designation lv2:control ;
+		lv2:index 0 ;
+		lv2:symbol "control" ;
+		lv2:name "Control"
+	] .

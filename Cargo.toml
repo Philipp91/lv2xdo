@@ -1,0 +1,12 @@
+[package]
+name = "lv2xdo"
+version = "0.1.0"
+authors = ["Philipp Keck <philipp@philippkeck.de>"]
+license = "ISC"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+lv2 = "0.6.0"
