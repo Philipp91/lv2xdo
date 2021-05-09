@@ -46,7 +46,7 @@ impl Error for CreationError {
             CreationError::Ffi => "libxdo creation error: Ffi error",
         }
     }
-    fn cause(&self) -> Option<&Error> {
+    fn cause(&self) -> Option<&dyn Error> {
         match *self {
             CreationError::Nul(ref err) => Some(err),
             CreationError::Ffi => None,
@@ -87,7 +87,7 @@ impl Error for OpError {
             OpError::Ffi(_) => "xdo operation failure: Ffi error",
         }
     }
-    fn cause(&self) -> Option<&Error> {
+    fn cause(&self) -> Option<&dyn Error> {
         match *self {
             OpError::Nul(ref err) => Some(err),
             OpError::Ffi(_) => None,

@@ -60,6 +60,13 @@
 
    <Parameter>
     <Index>3</Index>
+    <Name>Record</Name>
+    <Symbol>control_record</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
     <Name>Previous track</Name>
     <Symbol>control_prev</Symbol>
     <MidiChannel>5</MidiChannel>
@@ -71,7 +78,7 @@
    </Parameter>
 
    <Parameter>
-    <Index>4</Index>
+    <Index>5</Index>
     <Name>Next track</Name>
     <Symbol>control_next</Symbol>
     <MidiChannel>5</MidiChannel>
@@ -83,53 +90,66 @@
    </Parameter>
 
    <Parameter>
-    <Index>5</Index>
+    <Index>6</Index>
     <Name>Rewind</Name>
     <Symbol>control_rewind</Symbol>
     <Value>0</Value>
    </Parameter>
 
    <Parameter>
-    <Index>6</Index>
+    <Index>7</Index>
     <Name>Fast Forward</Name>
     <Symbol>control_forward</Symbol>
     <Value>0</Value>
    </Parameter>
 
    <Parameter>
-    <Index>7</Index>
+    <Index>8</Index>
     <Name>Repeat key</Name>
     <Symbol>control_repeat</Symbol>
     <Value>0</Value>
    </Parameter>
 
    <Parameter>
-    <Index>8</Index>
+    <Index>9</Index>
     <Name>Lower volume</Name>
     <Symbol>control_lower_volume</Symbol>
     <Value>0</Value>
    </Parameter>
 
    <Parameter>
-    <Index>9</Index>
+    <Index>10</Index>
     <Name>Raise volume</Name>
     <Symbol>control_raise_volume</Symbol>
     <Value>0</Value>
    </Parameter>
 
    <Parameter>
-    <Index>10</Index>
+    <Index>11</Index>
     <Name>Mute</Name>
     <Symbol>control_mute</Symbol>
     <Value>0</Value>
    </Parameter>
 
    <Parameter>
-    <Index>11</Index>
+    <Index>12</Index>
     <Name>Media</Name>
     <Symbol>control_media</Symbol>
     <Value>0</Value>
    </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Enable pitch-bend to seek</Name>
+    <Symbol>enable_pitch_to_seek</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
   </Data>
  </Plugin>
 
