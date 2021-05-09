@@ -17,8 +17,12 @@ which results in seeking (rewinding or fast-forwarding) in many media players.
 
 ### Installation
 
-Download the zipped release from GitHub and unpack it to `~/.lv2` or
-`/usr/local/lib/lv2` or wherever else your plugin host discovers LV2 plugins.
+If you happen to have a x64 linux machine, just download the zipped release from
+GitHub and unpack it to `~/.lv2` or `/usr/local/lib/lv2` or wherever else your
+plugin host discovers LV2 plugins.
+
+Otherwise, clone this repository, install dependencies (see below) and run
+`./build.sh` to build from source.
 
 ### Configuration
 
