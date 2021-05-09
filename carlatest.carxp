@@ -29,13 +29,105 @@
 
    <Parameter>
     <Index>0</Index>
-    <Name>Play key</Name>
+    <Name>Play</Name>
     <Symbol>control_play</Symbol>
     <MidiChannel>5</MidiChannel>
     <MappedControlIndex>4</MappedControlIndex>
     <MappedMinimum>0</MappedMinimum>
     <MappedMaximum>1</MappedMaximum>
     <MidiCC>4</MidiCC>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Pause</Name>
+    <Symbol>control_pause</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Stop</Name>
+    <Symbol>control_stop</Symbol>
+    <MidiChannel>5</MidiChannel>
+    <MappedControlIndex>5</MappedControlIndex>
+    <MappedMinimum>0</MappedMinimum>
+    <MappedMaximum>1</MappedMaximum>
+    <MidiCC>5</MidiCC>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Previous track</Name>
+    <Symbol>control_prev</Symbol>
+    <MidiChannel>5</MidiChannel>
+    <MappedControlIndex>1</MappedControlIndex>
+    <MappedMinimum>0</MappedMinimum>
+    <MappedMaximum>1</MappedMaximum>
+    <MidiCC>1</MidiCC>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Next track</Name>
+    <Symbol>control_next</Symbol>
+    <MidiChannel>5</MidiChannel>
+    <MappedControlIndex>2</MappedControlIndex>
+    <MappedMinimum>0</MappedMinimum>
+    <MappedMaximum>1</MappedMaximum>
+    <MidiCC>2</MidiCC>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Rewind</Name>
+    <Symbol>control_rewind</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Fast Forward</Name>
+    <Symbol>control_forward</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Repeat key</Name>
+    <Symbol>control_repeat</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Lower volume</Name>
+    <Symbol>control_lower_volume</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Raise volume</Name>
+    <Symbol>control_raise_volume</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Mute</Name>
+    <Symbol>control_mute</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Media</Name>
+    <Symbol>control_media</Symbol>
     <Value>0</Value>
    </Parameter>
   </Data>

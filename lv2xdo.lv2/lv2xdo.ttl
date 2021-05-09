@@ -17,21 +17,24 @@
 	lv2:binary <liblv2xdo.so> ;
 
 	lv2:requiredFeature lv2:inPlaceBroken ;
-	lv2:port [
-			a lv2:InputPort, lv2:ControlPort ;
-			lv2:index 1 ;
-			lv2:symbol "control_play" ;
-			lv2:name "Play key" ;
-			lv2:default 0.000000 ;
-			lv2:minimum 0.000000 ;
-			lv2:maximum 1.000000 ;
-			lv2:portProperty lv2:toggled ;
-	] , [
-		a lv2:InputPort , atom:AtomPort ;
-		atom:bufferType atom:Sequence ;
-		atom:supports midi:MidiEvent ;
-		lv2:designation lv2:control ;
-		lv2:index 0 ;
-		lv2:symbol "control" ;
-		lv2:name "Control"
-	] .
+	lv2:port
+			[ a lv2:InputPort, lv2:ControlPort; lv2:index 1; lv2:symbol "control_play"; lv2:name "Play"; lv2:default 0; lv2:minimum 0; lv2:maximum 1;	lv2:portProperty lv2:toggled; ] ,
+			[ a lv2:InputPort, lv2:ControlPort; lv2:index 2; lv2:symbol "control_pause"; lv2:name "Pause"; lv2:default 0; lv2:minimum 0; lv2:maximum 1;	lv2:portProperty lv2:toggled; ] ,
+			[ a lv2:InputPort, lv2:ControlPort; lv2:index 3; lv2:symbol "control_stop"; lv2:name "Stop"; lv2:default 0; lv2:minimum 0; lv2:maximum 1;	lv2:portProperty lv2:toggled; ] ,
+			[ a lv2:InputPort, lv2:ControlPort; lv2:index 4; lv2:symbol "control_record"; lv2:name "Record"; lv2:default 0; lv2:minimum 0; lv2:maximum 1;	lv2:portProperty lv2:toggled; ] ,
+			[ a lv2:InputPort, lv2:ControlPort; lv2:index 5; lv2:symbol "control_prev"; lv2:name "Previous track"; lv2:default 0; lv2:minimum 0; lv2:maximum 1;	lv2:portProperty lv2:toggled; ] ,
+			[ a lv2:InputPort, lv2:ControlPort; lv2:index 6; lv2:symbol "control_next"; lv2:name "Next track"; lv2:default 0; lv2:minimum 0; lv2:maximum 1;	lv2:portProperty lv2:toggled; ] ,
+			[ a lv2:InputPort, lv2:ControlPort; lv2:index 7; lv2:symbol "control_rewind"; lv2:name "Rewind"; lv2:default 0; lv2:minimum 0; lv2:maximum 1;	lv2:portProperty lv2:toggled; ] ,
+			[ a lv2:InputPort, lv2:ControlPort; lv2:index 8; lv2:symbol "control_forward"; lv2:name "Fast Forward"; lv2:default 0; lv2:minimum 0; lv2:maximum 1;	lv2:portProperty lv2:toggled; ] ,
+			[ a lv2:InputPort, lv2:ControlPort; lv2:index 9; lv2:symbol "control_repeat"; lv2:name "Repeat key"; lv2:default 0; lv2:minimum 0; lv2:maximum 1;	lv2:portProperty lv2:toggled; ] ,
+			[ a lv2:InputPort, lv2:ControlPort; lv2:index 10; lv2:symbol "control_lower_volume"; lv2:name "Lower volume"; lv2:default 0; lv2:minimum 0; lv2:maximum 1;	lv2:portProperty lv2:toggled; ] ,
+			[ a lv2:InputPort, lv2:ControlPort; lv2:index 11; lv2:symbol "control_raise_volume"; lv2:name "Raise volume"; lv2:default 0; lv2:minimum 0; lv2:maximum 1;	lv2:portProperty lv2:toggled; ] ,
+			[ a lv2:InputPort, lv2:ControlPort; lv2:index 12; lv2:symbol "control_mute"; lv2:name "Mute"; lv2:default 0; lv2:minimum 0; lv2:maximum 1;	lv2:portProperty lv2:toggled; ] ,
+			[ a lv2:InputPort, lv2:ControlPort; lv2:index 13; lv2:symbol "control_media"; lv2:name "Media"; lv2:default 0; lv2:minimum 0; lv2:maximum 1;	lv2:portProperty lv2:toggled; ] ,
+			[ a               lv2:InputPort, atom:AtomPort ;
+			  atom:bufferType atom:Sequence ;
+			  atom:supports   midi:MidiEvent ;
+			  lv2:designation lv2:control ;
+			  lv2:index       0 ;
+			  lv2:symbol      "control" ;
+			  lv2:name        "Control" ] .

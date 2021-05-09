@@ -8,6 +8,18 @@ struct Ports {
     #[allow(dead_code)]
     midi_in: InputPort<AtomPort>,
     control_play: InputPort<Control>,
+    control_pause: InputPort<Control>,
+    control_stop: InputPort<Control>,
+    control_record: InputPort<Control>,
+    control_prev: InputPort<Control>,
+    control_next: InputPort<Control>,
+    control_rewind: InputPort<Control>,
+    control_forward: InputPort<Control>,
+    control_repeat: InputPort<Control>,
+    control_lower_volume: InputPort<Control>,
+    control_raise_volume: InputPort<Control>,
+    control_mute: InputPort<Control>,
+    control_media: InputPort<Control>,
 }
 
 struct KeyMapping {
@@ -24,6 +36,18 @@ fn make_key_mapping(input_port: fn(&Ports) -> &InputPort<Control>,
 fn default_key_mappings() -> Vec<KeyMapping> {
     vec![
         make_key_mapping(|ports: &Ports| &ports.control_play, "XF86AudioPlay"),
+        make_key_mapping(|ports: &Ports| &ports.control_pause, "XF86AudioPause"),
+        make_key_mapping(|ports: &Ports| &ports.control_stop, "XF86AudioStop"),
+        make_key_mapping(|ports: &Ports| &ports.control_record, "XF86AudioRecord"),
+        make_key_mapping(|ports: &Ports| &ports.control_prev, "XF86AudioPrev"),
+        make_key_mapping(|ports: &Ports| &ports.control_next, "XF86AudioNext"),
+        make_key_mapping(|ports: &Ports| &ports.control_rewind, "XF86AudioRewind"),
+        make_key_mapping(|ports: &Ports| &ports.control_forward, "XF86AudioForward"),
+        make_key_mapping(|ports: &Ports| &ports.control_repeat, "XF86AudioRepeat"),
+        make_key_mapping(|ports: &Ports| &ports.control_lower_volume, "XF86AudioLowerVolume"),
+        make_key_mapping(|ports: &Ports| &ports.control_raise_volume, "XF86AudioRaiseVolume"),
+        make_key_mapping(|ports: &Ports| &ports.control_mute, "XF86AudioMute"),
+        make_key_mapping(|ports: &Ports| &ports.control_media, "XF86AudioMedia"),
     ]
 }
 
