@@ -1,6 +1,7 @@
 //! High level bindings to [libxdo](http://www.semicomplete.com/files/xdotool/docs/html/)
 
 #![warn(missing_docs)]
+#![allow(dead_code)]
 
 extern crate libxdo_sys as sys;
 

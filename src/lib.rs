@@ -1,7 +1,7 @@
 use std::time::{Duration, SystemTime};
 
 use lv2::prelude::*;
-use wmidi::{MidiMessage, PitchBend, U14};
+use wmidi::{MidiMessage, U14};
 
 use xdo::XDo;
 
